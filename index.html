@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Rokon Uz Jamil | Cybersecurity Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0f0d;
+            color: #e2e8f0;
+        }
+        
+        .font-mono {
+            font-family: 'Fira Code', monospace;
+        }
+
+        /* Glassmorphism Background */
+        .glass-card {
+            background: rgba(15, 23, 20, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(16, 185, 129, 0.15);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(16, 185, 129, 0.4);
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.1);
+        }
+
+        /* Terminal Cursor Glow */
+        .cursor-blink {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="bg-[#080c0a] text-gray-300 min-h-screen selection:bg-emerald-500 selection:text-black">
+
+    <!-- Background Grid Pattern -->
+    <div class="fixed inset-0 bg-[linear-gradient(to_right,#0f1715_1px,transparent_1px),linear-gradient(to_bottom,#0f1715_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass-card border-b border-emerald-900/30 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#" class="font-mono text-emerald-400 font-bold text-lg flex items-center gap-2">
+                <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                rokon<span class="text-gray-500">.sec</span>
+            </a>
+            <div class="hidden md:flex gap-8 text-sm font-mono">
+                <a href="#about" class="hover:text-emerald-400 transition-colors">// About</a>
+                <a href="#skills" class="hover:text-emerald-400 transition-colors">// Skills</a>
+                <a href="#contact" class="hover:text-emerald-400 transition-colors">// Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Hero Section -->
+    <main class="max-w-4xl mx-auto px-6 pt-32 pb-20 relative z-10">
+        
+        <!-- Status Badge -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-card border border-emerald-500/30 mb-8">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            <span class="font-mono text-xs text-emerald-400 uppercase tracking-wider">Status: Open to Cyber Security Opportunities</span>
+        </div>
+
+        <!-- Name & Bio -->
+        <h1 class="text-4xl sm:text-6xl font-bold text-white tracking-tight mb-4 font-mono">
+            Md Rokon Uz Jamil<span class="text-emerald-500 cursor-blink">_</span>
+        </h1>
+
+        <p class="text-emerald-400 font-mono text-lg mb-6 flex items-center gap-2">
+            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+            BSc in CSE, Southeast University 
+            <span class="text-gray-600">•</span> 
+            <span class="text-gray-300">Aspiring Cyber Security Professional</span>
+        </p>
+
+        <p class="text-gray-400 text-lg leading-relaxed mb-8 max-w-2xl">
+            Based in <span class="text-white font-medium">Bogura, Bangladesh</span>. I like taking systems apart to understand how they can be broken — and then how to defend them. When I'm not studying, I'm usually planning my next trip or hunting down a new dish to try.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap gap-4 mb-16">
+            <a href="#contact" class="px-6 py-3 rounded-lg bg-emerald-500 text-black font-semibold font-mono hover:bg-emerald-400 transition-all transform hover:-translate-y-0.5 flex items-center gap-2 shadow-lg shadow-emerald-500/20">
+                <i data-lucide="mail" class="w-4 h-4"></i> Get in touch
+            </a>
+            <a href="#about" class="px-6 py-3 rounded-lg glass-card text-gray-300 font-mono hover:text-white border border-gray-700 hover:border-emerald-500/50 transition-all flex items-center gap-2">
+                <i data-lucide="file-text" class="w-4 h-4"></i> See my background
+            </a>
+        </div>
+
+        <!-- Quick Info Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 border-t border-emerald-900/30 pt-12" id="about">
+            <div class="glass-card p-5 rounded-xl">
+                <div class="text-emerald-400 mb-2 font-mono text-sm flex items-center gap-2">
+                    <i data-lucide="shield-check" class="w-4 h-4"></i> Focus
+                </div>
+                <div class="text-white font-semibold">Ethical Hacking & Defense</div>
+                <div class="text-xs text-gray-500 mt-1">Analyzing and securing systems</div>
+            </div>
+
+            <div class="glass-card p-5 rounded-xl">
+                <div class="text-emerald-400 mb-2 font-mono text-sm flex items-center gap-2">
+                    <i data-lucide="map-pin" class="w-4 h-4"></i> Location
+                </div>
+                <div class="text-white font-semibold">Bogura, Bangladesh</div>
+                <div class="text-xs text-gray-500 mt-1">Open to remote/onsite roles</div>
+            </div>
+
+            <div class="glass-card p-5 rounded-xl">
+                <div class="text-emerald-400 mb-2 font-mono text-sm flex items-center gap-2">
+                    <i data-lucide="compass" class="w-4 h-4"></i> Passions
+                </div>
+                <div class="text-white font-semibold">Cybersecurity, Travel, Food</div>
+                <div class="text-xs text-gray-500 mt-1">Continuous learner & explorer</div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-emerald-900/20 py-8 text-center text-sm font-mono text-gray-600">
+        <p>© 2026 Md Rokon Uz Jamil. Built for security.</p>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
